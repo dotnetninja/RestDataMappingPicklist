@@ -50,7 +50,7 @@ export class SelectorEvents {
         const formService = await SDK.getService<IWorkItemFormService>(WorkItemTrackingServiceIds.WorkItemFormService);
 
         const value = await formService.getFieldValue(this.fieldName);
-        if (typeof value !== "string") {
+        if (!value) {
             return;
         }
         return value;

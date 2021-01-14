@@ -57,10 +57,10 @@
                     "description": "The field associated with the control, it will match the value from the rest service's key field.",
                     "type": "WorkItemField",
                     "properties": {
-                        "workItemFieldTypes": ["String", "PlainText", "HTML"]
+                        "workItemFieldTypes": ["String", "PlainText", "HTML", "Integer", "TreePath"]
                     },
                     "validation": {
-                        "dataType": "String",
+                        "dataType": ["String","Integer","TreePath"],
                         "isRequired": true
                     }
                 },
